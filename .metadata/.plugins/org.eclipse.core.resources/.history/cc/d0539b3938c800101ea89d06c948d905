@@ -1,0 +1,14 @@
+package com.demo;
+
+public class VisitorApplication {
+       public static void main(String[] args)
+       {
+    	   Animal monkey=new Monkey();
+    	   Animal lion=new Lion();
+    	   Animal dolphin=new Dolphin();
+    	   
+    	   AnimalVisitor speak=new Speak();
+    	   
+    	   
+       }
+}

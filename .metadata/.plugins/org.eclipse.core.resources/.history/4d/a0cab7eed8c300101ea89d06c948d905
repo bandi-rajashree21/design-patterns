@@ -1,0 +1,34 @@
+package facade;
+
+import subsystems.Amplifier;
+import subsystems.DVDPlayer;
+import subsystems.Projector;
+
+public class HomeTheatreFacade {
+	 private DVDPlayer dvd;
+	    private Projector projector;
+	    private Amplifier amp;
+
+	    public HomeTheatreFacade(DVDPlayer dvd, Projector projector, Amplifier amp) {
+	        this.dvd = dvd;
+	        this.projector = projector;
+	        this.amp = amp;
+
+}
+	    public void watchMovie(String movie) {
+	        System.out.println("Get ready to watch a movie...");
+	        projector.on();
+	        projector.wideScreenMode();
+	        amp.on();
+	        amp.setVolume(5);
+	        dvd.on();
+	        dvd.play(movie);
+	    }
+
+	    public void endMovie() {
+	        System.out.println("Shutting movie theater down...");
+	        dvd.off();
+	        amp.off();
+	        projector.off();
+	    }
+}

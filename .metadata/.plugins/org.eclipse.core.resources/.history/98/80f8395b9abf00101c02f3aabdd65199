@@ -1,0 +1,6 @@
+package CoffeeDecorator;
+
+public abstract class Cofeedecorator {
+	
+
+}

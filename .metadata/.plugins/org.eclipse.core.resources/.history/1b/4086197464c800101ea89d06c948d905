@@ -1,0 +1,32 @@
+package com.demo;
+
+public class Builder {
+	 private final String CPU;
+     private final String RAM;
+
+     private String storage;
+     private String graphicsCard;
+
+     // Constructor with required fields
+     public Builder(String CPU, String RAM) {
+         this.CPU = CPU;
+         this.RAM = RAM;
+     }
+
+     // Optional setters
+     public Builder setStorage(String storage) {
+         this.storage = storage;
+         return this;
+     }
+
+     public Builder setGraphicsCard(String graphicsCard) {
+         this.graphicsCard = graphicsCard;
+         return this;
+     }
+
+     // Final build method
+     public Computer build() {
+         return new Computer(this);
+     }
+ 
+}

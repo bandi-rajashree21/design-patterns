@@ -1,0 +1,16 @@
+package com.demo;
+
+public class CompositeTest {
+         public static void main(String[] args)
+         {
+        	 Component hd=new Leaf(4000,"HDD");
+        	 Component mouse=new Leaf(4000,"Mouse");
+        	 Component monitor=new Leaf(4000,"monitor");
+        	 Component Ram=new Leaf(4000,"Ram");
+        	 
+        	 Component ph=new Composite("peripheral");
+        	 Component cabinet=new Composite("cabinet");
+        	 Component mb=new Composite("MB");
+        	 Component computer=new Composite("Computer");
+         }
+}

@@ -1,0 +1,7 @@
+package com.demo;
+
+public class WindowsCheckBox implements Checkbox{
+	 public void paint() {
+	        System.out.println("Rendering a Windows-style CheckBox");
+	    }
+}

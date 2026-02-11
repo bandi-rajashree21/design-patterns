@@ -1,0 +1,9 @@
+package com.demo;
+
+public class Windowsfactory implements GUIFactory{
+	public Button createButton()
+	{
+		return new WindowsButton();
+	}
+
+}

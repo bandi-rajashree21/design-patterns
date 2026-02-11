@@ -1,0 +1,24 @@
+package decorator;
+
+import com.raj.Coffee;
+
+public class MilkDecorator extends CoffeeDecorator{
+
+	public MilkDecorator(Coffee coffee) {
+		super(coffee);
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public String getDescription()
+	{
+		return decoratedCoffee.getDescription() +" , Milk";
+	}
+	
+	@Override
+	public double getCost()
+	{
+		return decoratedCoffee.getCost() + 1.5;
+	}
+
+}

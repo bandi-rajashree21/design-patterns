@@ -1,0 +1,9 @@
+package com.demo;
+
+class Leaf{
+	
+}
+
+class Composite{
+	
+}

@@ -1,0 +1,21 @@
+package com.demo;
+
+public class ChainOfResponsibilityDemo {
+	public static void main(String[] args)
+	{
+		// Create handlers
+        Approver manager = new Manager();
+        Approver director = new Director();
+        Approver ceo = new CEO();
+
+        // Build the chain
+        manager.setNextApprover(director);
+        director.setNextApprover(ceo);
+
+        // Make requests
+        manager.processRequest(5000);
+        manager.processRequest(20000);
+        manager.processRequest(100000);
+	}
+
+}

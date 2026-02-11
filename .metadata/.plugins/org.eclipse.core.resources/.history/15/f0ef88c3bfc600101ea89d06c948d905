@@ -1,0 +1,16 @@
+package com.demo;
+
+public class IteratorPatternDemo {
+    public static void main(String[] args)
+    {
+    	BookCollection collection=new BookCollection();
+    	Iterator iterator=collection.getIterator();
+    	System.out.print("Iterating over book collection");
+    	
+    	while(iterator.hasNext())
+    	{
+    		String book=(String)iterator.next();
+    	}
+    	
+    }
+}

@@ -1,0 +1,25 @@
+package com.demo;
+
+public class Jump implements AnimalVisitor{
+
+	@Override
+	public void visitMonkey(Monkey monkey) {
+		// TODO Auto-generated method stub
+		System.out.println("Jumped 20 feet high! on to the treel");
+		
+	}
+
+	@Override
+	public void visitLion(Lion lion) {
+		// TODO Auto-generated method stub
+		System.out.println("Jumped 7 feet! Back on the ground!");
+		
+	}
+
+	@Override
+	public void visitDolphin(Dolphin dolphin) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

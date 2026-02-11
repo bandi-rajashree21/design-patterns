@@ -1,0 +1,5 @@
+package concreteComponent;
+
+public class SimpleCoffee {
+
+}

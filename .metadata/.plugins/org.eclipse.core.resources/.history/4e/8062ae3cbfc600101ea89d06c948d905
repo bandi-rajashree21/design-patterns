@@ -1,0 +1,28 @@
+package com.demo;
+
+public class BookCollection implements Container{
+	private String[] books= {"Design Patterns", "Clean Code", "Effective Java", "Refactoring"};
+	
+	@Override
+    public Iterator getIterator() {
+        return new BookIterator();
+    }
+
+    // Inner class implementing the iterator
+    private class BookIterator implements Iterator {
+        int index;
+
+        @Override
+        public boolean hasNext() {
+            return index < books.length;
+        }
+
+        @Override
+        public Object next() {
+            if (this.hasNext()) {
+                return books[index++];
+            }
+            return null;
+        }
+
+}

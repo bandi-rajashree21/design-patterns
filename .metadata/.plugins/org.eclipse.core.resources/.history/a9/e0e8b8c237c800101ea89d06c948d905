@@ -1,0 +1,15 @@
+package com.demo;
+
+public class Speak implements AnimalVisitor{
+	public void visit Monkey (Monkey monkey) {
+		 
+	} System.out.println("Monkey shout: Ooh oo aa aa!");
+	 
+	public void visitLion (Lion lion) {
+	 
+	System.out.println("Lion roar: Roaaar!"); }
+	 
+	public void visitDolphin (Dolphin dolphin) {
+	 
+	System.out.println("Dolphin speak: Tuut tutt tuutt!")
+}

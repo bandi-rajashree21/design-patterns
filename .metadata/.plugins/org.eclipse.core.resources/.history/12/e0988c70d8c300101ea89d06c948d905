@@ -1,0 +1,13 @@
+package facade;
+
+public class HomeTheatreFacade {
+	 private DVDPlayer dvd;
+	    private Projector projector;
+	    private Amplifier amp;
+
+	    public HomeTheaterFacade(DVDPlayer dvd, Projector projector, Amplifier amp) {
+	        this.dvd = dvd;
+	        this.projector = projector;
+	        this.amp = amp;
+
+}

@@ -1,0 +1,14 @@
+package com.demo;
+
+ class SingleTonDemo {
+	//illegal construct
+     //Compile Time Error: The constructor SingleObject() is not visible
+//     SingleTon object = new SingleTon();
+
+     //Get the only object available
+     SingleTon object = SingleTon.getInstance();
+
+     //show the message
+     object.showMessag();
+
+}

@@ -1,0 +1,13 @@
+package com.demo;
+
+interface Component{
+	
+}
+
+class Leaf{
+	
+}
+
+class Composite{
+	
+}

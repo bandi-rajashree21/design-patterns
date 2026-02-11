@@ -1,0 +1,12 @@
+package com.demo;
+
+public class Youtube {
+    public static void main(String[] args)
+    {
+    	Channel ch=new Channel();
+    	Subscriber s1=new Subscriber("rajashree");
+    	Subscriber s2=new Subscriber("bandi");
+    	Subscriber s3=new Subscriber("ramyashree");
+    	
+    }
+}

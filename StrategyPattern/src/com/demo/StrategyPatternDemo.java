@@ -1,0 +1,23 @@
+package com.demo;
+
+public class StrategyPatternDemo {
+
+	public static void main(String[] args) {
+
+		PaymentContext context = new PaymentContext();
+
+		context.setPaymentStrategy(new CreditCardPayment("1234-5678-9876-5432"));
+		context.payAmount(1000);
+		
+		context.setPaymentStrategy(new PayPalPayment("raj@paypal.com"));
+		context.payAmount(10000);
+		
+		context.setPaymentStrategy(new UpiPayment("rajashree@upi.com"));
+		context.payAmount(5000);
+		
+		context.setPaymentStrategy(null);
+		context.payAmount(0);
+		
+	}
+
+}

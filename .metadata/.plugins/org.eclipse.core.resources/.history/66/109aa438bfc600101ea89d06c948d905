@@ -1,0 +1,6 @@
+package com.demo;
+
+public class BookCollection implements Container{
+	private String[] books= {"Design Patterns", "Clean Code", "Effective Java", "Refactoring"};
+
+}

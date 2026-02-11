@@ -1,0 +1,10 @@
+package com.demo;
+
+public class Manager extends Approver{
+	@Override
+	public void processRequest(int amount)
+	{
+		
+	}
+
+}

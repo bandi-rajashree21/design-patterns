@@ -1,0 +1,10 @@
+package com.demo;
+
+public class VisitorApplication {
+       public static void main(String[] args)
+       {
+    	   Animal monkey=new Monkey();
+    	   Animal lion=new Lion();
+    	   
+       }
+}

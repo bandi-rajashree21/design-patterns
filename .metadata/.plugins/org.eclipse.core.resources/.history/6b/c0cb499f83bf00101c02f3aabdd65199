@@ -1,0 +1,12 @@
+package com.adap;
+
+public class School {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AssignmentWork aw=new AssignmentWork();
+		aw.writeAssignment("hi");
+
+	}
+
+}

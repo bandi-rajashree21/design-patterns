@@ -1,0 +1,16 @@
+package com.demo;
+
+public class NetflixVideo extends Video{
+	
+	public NetflixVideo(VideoProcessor videoProcessor) {
+		super(videoProcessor);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void play(String videoFile) {
+		processor.process(videoFile);
+		
+	}
+
+}

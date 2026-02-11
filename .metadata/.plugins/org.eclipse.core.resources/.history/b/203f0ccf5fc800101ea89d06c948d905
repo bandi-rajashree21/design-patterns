@@ -1,0 +1,13 @@
+package com.demo;
+
+public class AbstractFactoryApplication {
+	private Button button;
+	private Checkbox checkbox;
+	
+	 public Application(GUIFactory factory) {
+	        button = factory.createButton();
+	        checkbox = factory.createCheckbox();
+	    }
+
+
+}

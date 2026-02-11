@@ -1,0 +1,10 @@
+package client;
+
+import proxy.ProxyImage;
+import subject.Image;
+
+public class ProxyPatternDemo {
+	Image i1=new ProxyImage("pic.png");
+	
+
+}

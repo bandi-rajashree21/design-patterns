@@ -1,0 +1,13 @@
+package com.demo;
+
+interface Component{
+	void showPrice();
+}
+
+class Leaf{
+	
+}
+
+class Composite{
+	
+}

@@ -1,0 +1,20 @@
+package com.demo;
+
+public class AbstractFactoryApplication {
+	public static void main(String[] args)
+	{
+		GUIFactory factory;
+
+        String osType = "Mac"; // could come from config/env
+
+        if (osType.equalsIgnoreCase("Windows")) {
+            factory = new WindowsFactory();
+        } else {
+            factory = new MacFactory();
+        }
+
+        Application app = new Application(factory);
+        app.renderUI();
+	}
+
+}

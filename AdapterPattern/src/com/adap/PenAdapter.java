@@ -1,0 +1,16 @@
+package com.adap;
+
+import com.raj.PilotPen;
+
+public class PenAdapter implements Pen{
+//   PilotPen pp=new PilotPen();
+   PilotPen p=new PilotPen();
+	@Override
+	public void write(String str) {
+		// TODO Auto-generated method stub
+		p.mark(str);	
+		
+	}
+	
+
+}

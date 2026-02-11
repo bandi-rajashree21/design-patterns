@@ -1,0 +1,13 @@
+package com.demo;
+
+public class FactoryMethodDemo {
+	
+	public static void main(String[] args)
+	{
+		ShapeFactory f1=new CircleFactory();
+		Shape s1=f1.createShape();
+		s1.draw();
+		
+	}
+
+}

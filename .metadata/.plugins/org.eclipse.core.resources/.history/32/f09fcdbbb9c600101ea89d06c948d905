@@ -1,0 +1,17 @@
+package com.demo;
+
+public class StopMusicCommand implements Command{
+	private MusicSystem musicSystem;
+	
+	public StopMusicCommand(MusicSystem musicSystem)
+	{
+		this.musicSystem=musicSystem;
+	}
+
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
