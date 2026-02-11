@@ -76,3 +76,4 @@ These patterns deal with communication between objects and how responsibilities 
 1. Clone the repository: `git clone https://github.com/bandi-rajashree21/design-patterns/.git`
 2. Navigate to the specific pattern folder.
 3. Compile and run the `Main` or `Demo` class to see the pattern in action.
+4. Or Fork and raise PR for improvements and suggestions
